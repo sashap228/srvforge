@@ -64,10 +64,10 @@ button{font:inherit;color:inherit}
 .task:hover{background:var(--paper)}
 .task .n{font:500 13px Inter;color:var(--mut)}
 .task b{font:700 clamp(26px,3vw,40px)/1 var(--disp);text-transform:uppercase}
-.task span{color:var(--mut);font-size:14px}
+.task .d{color:var(--mut);font-size:14px}
 .task .arr{justify-self:end;width:32px;height:32px;border:1.5px solid var(--ink);border-radius:50%;display:grid;place-items:center;font-size:15px;transition:.15s}
 .task.on{background:var(--ink);color:#fff}
-.task.on span,.task.on .n{color:#bdbdbd}
+.task.on .d,.task.on .n{color:#bdbdbd}
 .task.on .arr{border-color:#fff;background:#fff;color:var(--ink)}
 
 .tiers{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}
@@ -171,7 +171,7 @@ button{font:inherit;color:inherit}
   .hero{height:520px;min-height:0}.hero-kicker{left:18px;top:24px}.hero-cta{left:18px;bottom:28px;flex-direction:column;align-items:flex-start;gap:14px}.hero-side{right:18px;bottom:28px}
   .hero-rack{width:44vw}
   .kinds{grid-template-columns:1fr}.kind+.kind{border-left:0;padding-left:0}
-  .task{grid-template-columns:34px 1fr 34px;padding:16px 6px}.task span{display:none}
+  .task{grid-template-columns:34px 1fr 34px;padding:16px 6px}.task .d{display:none}
   .tiers{grid-template-columns:1fr}.tier+.tier{border-left:0;border-top:1px solid var(--line)}.tier{min-height:0}
   .res-grid{grid-template-columns:1fr}.parts{border-right:0;padding-right:0;border-bottom:1px solid var(--line)}.side{padding-left:0;padding-top:24px}
   .tests{grid-template-columns:1fr;gap:32px}

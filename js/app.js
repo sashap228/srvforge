@@ -124,7 +124,7 @@ function renderKinds(){
 }
 function renderTasks(){
   $("#tasks").innerHTML = TASKS.filter(t => t.kind === S.kind).map((t, i) =>
-    `<button class="task ${t.id === S.task ? "on" : ""}" data-t="${t.id}"><span class="n">${String(i + 1).padStart(2, "0")}</span><b>${esc(t.title)}</b><span>${esc(t.sub)}</span><i class="arr">→</i></button>`).join("");
+    `<button class="task ${t.id === S.task ? "on" : ""}" data-t="${t.id}"><span class="n">${String(i + 1).padStart(2, "0")}</span><b>${esc(t.title)}</b><span class="d">${esc(t.sub)}</span><i class="arr">→</i></button>`).join("");
 }
 function renderTiers(){
   $("#tiers").innerHTML = task().tiers.map((tr, i) => {
